@@ -1,4 +1,4 @@
-name: Build
+name: Build Plugins
 
 on:
   push:
@@ -10,5 +10,28 @@ permissions:
 
 jobs:
   build:
-    uses: recloudstream/cloudstream-extensions-template/.github/workflows/build.yml@master
-    
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Set up JDK 17
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'temurin'
+          java-version: '17'
+
+      - name: Setup Gradle
+        uses: gradle/actions/setup-gradle@v3
+
+      - name: Build Cloudstream Plugins
+        run: gradle makePlugins
+
+      - name: Deploy to builds branch
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./builds
+          publish_branch: builds
+          force_update: true
+          
