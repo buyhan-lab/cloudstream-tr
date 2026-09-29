@@ -10,5 +10,5 @@ permissions:
 
 jobs:
   build:
-    uses: recloudstream/cloudstream-extensions-template/.github/workflows/main.yml@master
+    uses: recloudstream/cloudstream-extensions-template/.github/workflows/build.yml@master
     
