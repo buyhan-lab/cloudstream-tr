@@ -1,0 +1,23 @@
+[
+    {
+        "iconUrl": "https://www.themoviedb.org/assets/2/v4/logos/v2/blue_square_1-5bdc75aaebeb75dc7ae79426ddd9be3b2be1e342510f8202baf6bffa71d7f5c4.svg",
+        "fileHash": "sha256-f31940f4aa98e1c386c4b4765028977b37eced42bab7fc8bf8636f670b6c54b8",
+        "apiVersion": 1,
+        "repositoryUrl": "https://github.com/buyhan-lab/cloudstream-tr",
+        "fileSize": 10960,
+        "status": 1,
+        "language": "en",
+        "authors": [
+            "Burhan"
+        ],
+        "tvTypes": [
+            "Movie",
+            "TvSeries"
+        ],
+        "version": 2,
+        "internalName": "TmdbProvider",
+        "description": "TMDB katalog: film/dizi listesi, afis, ozet, Turkiye'de hangi platformda oldugu",
+        "url": "https://raw.githubusercontent.com/buyhan-lab/cloudstream-tr/builds/TmdbProvider.cs3",
+        "name": "TmdbProvider"
+    }
+]
