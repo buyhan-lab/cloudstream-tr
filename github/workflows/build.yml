@@ -1,0 +1,11 @@
+name: Build
+
+on:
+  push:
+    branches: [ master, main ]
+  workflow_dispatch:
+
+jobs:
+  build:
+    uses: lagradost/cloudstream-extensions-template/.github/workflows/main.yml@master
+    
