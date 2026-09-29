@@ -7,7 +7,7 @@ import org.json.JSONObject
 class TmdbProvider : MainAPI() {
     override var name = "TMDB Katalog"
     override var mainUrl = "https://api.themoviedb.org/3"
-    override var lang = "tr"
+    override var lang = "en"
     override val hasMainPage = true
     override val supportedTypes = setOf(TvType.Movie, TvType.TvSeries)
 
