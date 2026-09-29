@@ -1,0 +1,14 @@
+name: Build
+
+on:
+  push:
+    branches: [ master, main ]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    uses: recloudstream/cloudstream-extensions-template/.github/workflows/main.yml@master
+    
