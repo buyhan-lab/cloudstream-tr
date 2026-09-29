@@ -1,16 +1,8 @@
 {
-  "name": "Yerli Arşiv Deposu",
-  "description": "Güncel film ve dizi kaynakları",
-  "authors": ["Topluluk"],
+  "name": "Burhan TR",
+  "description": "TMDB katalog - Turkce",
   "manifestVersion": 1,
-  "plugins": [
-    {
-      "name": "TurkSource",
-      "internalName": "TurkSource",
-      "version": 1,
-      "description": "Yerli kaynak",
-      "authors": ["Geliştirici"],
-      "url": "https://raw.githubusercontent.com/buyhan-lab/cloudstream-tr/builds/TurkSource.plugin"
-    }
+  "pluginLists": [
+    "https://raw.githubusercontent.com/buyhan-lab/cloudstream-tr/builds/plugins.json"
   ]
 }

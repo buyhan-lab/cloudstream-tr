@@ -1,26 +1,5 @@
-pluginManagement {
-    repositories {
-        google()
-        mavenCentral()
-        gradlePluginPortal()
-        maven("https://jitpack.io")
-    }
-    resolutionStrategy {
-        eachPlugin {
-            if (requested.id.id == "com.lagradost.cloudstream3.gradle") {
-                useModule("com.github.recloudstream:gradle:${requested.version}")
-            }
-        }
-    }
-}
+rootProject.name = "CloudstreamPlugins"
 
-dependencyResolutionManagement {
-    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
-    repositories {
-        google()
-        mavenCentral()
-        maven("https://jitpack.io")
-    }
+File(rootDir, ".").listFiles()?.filter { it.isDirectory }?.forEach { dir ->
+    if (File(dir, "build.gradle.kts").exists()) include(dir.name)
 }
-
-rootProject.name = "cloudstream-tr"
